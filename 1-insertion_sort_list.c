@@ -2,17 +2,21 @@
 
 void insertion_sort_list(listint_t **list)
 {
-	int temp = 0, i, j;
-	listint_t *aux, *current;
+	listint_t *aux, *current, *temp;
 	
 	current = (*list)->next;
 
 	while (current != NULL)
 	{
-		aux = current;
-		while ()
+		aux = current->prev;
+		while (aux != NULL && aux->n > current->n)
 		{
-		
+			temp = current->next;
+
+			if (current->next != NULL)
+			{
+				
+			}
 		}
 	}
 }
